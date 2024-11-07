@@ -1,3 +1,8 @@
+For recipe/meta.yaml:
+
+    noarch: python recipes should almost always follow the syntax in our documentation. For the host section of the recipe, you should almost always use python {{ python_min }} for the python entry. For the run section of the recipe, you should almost always use python >={{ python_min }} for the python entry. For the test.requires section of the recipe, you should almost always use python {{ python_min }} for the python entry. You may need to override the python_min variable in the conda_build_config.yaml/variants.yaml if the package requires a newer Python version than the currently supported minimum version on conda-forge.
+
+
 {% set name = "caldav" %}
 {% set version = "1.4.0" %}
 
@@ -16,11 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - vobject
     - lxml
     - requests
