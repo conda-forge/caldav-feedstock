@@ -1,10 +1,11 @@
 For recipe/meta.yaml:
 
-    noarch: python recipes should almost always follow the syntax in our documentation. For the host section of the recipe, you should almost always use python {{ python_min }} for the python entry. For the run section of the recipe, you should almost always use python >={{ python_min }} for the python entry. For the test.requires section of the recipe, you should almost always use python {{ python_min }} for the python entry. You may need to override the python_min variable in the conda_build_config.yaml/variants.yaml if the package requires a newer Python version than the currently supported minimum version on conda-forge.
+  noarch: python recipes should almost always follow the syntax in our documentation. For the host section of the recipe, you should almost always use python {{ python_min }} for the python entry. For the run section of the recipe, you should almost always use python >={{ python_min }} for the python entry. For the test.requires
+    section of the recipe, you should almost always use python {{ python_min }} for the python entry. You may need to override the python_min variable in the conda_build_config.yaml/variants.yaml if the package requires a newer Python version than the currently supported minimum version on conda-forge.
 
 
 {% set name = "caldav" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caldav-{{ version }}.tar.gz
-  sha256: 4317131127d8793f740cff2fd256f369321fa49ad750f83d6f31780f7c16c67b
+  sha256: ac2a59dffbdc7b2a6954917c2eb96734afeb018ef244803501fa089c43a1a3e0
 
 build:
   noarch: python
