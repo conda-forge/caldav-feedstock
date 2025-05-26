@@ -28,6 +28,7 @@ requirements:
     - recurring-ical-events >=2.0.0
     - pytz
     - tzlocal
+    - typing-extensions  # [py<311]
 
 test:
   imports:
@@ -37,6 +38,8 @@ test:
   requires:
     - python {{ python_min }}
     - pip
+    - typing-extensions  # [py<311]
+
 
 about:
   home: https://github.com/python-caldav/caldav
