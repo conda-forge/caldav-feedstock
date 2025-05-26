@@ -28,7 +28,7 @@ requirements:
     - recurring-ical-events >=2.0.0
     - pytz
     - tzlocal
-    - typing-extensions  # [py<311]
+    - typing-extensions
 
 test:
   imports:
@@ -38,7 +38,7 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-    - typing-extensions  # [py<311]
+    - typing-extensions
 
 
 about:
