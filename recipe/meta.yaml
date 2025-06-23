@@ -1,5 +1,5 @@
 {% set name = "caldav" %}
-{% set version = "1.6.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caldav-{{ version }}.tar.gz
-  sha256: 6e742601ec9ca1a0bc6e871fffe0392145bcc67de730f398ba5cefa5c49773f8
+  sha256: 2dabc24e85ca3288a2ecc8ffc609ca413fd973644e1c77153a01834917433ac8
 
 build:
   noarch: python
@@ -18,12 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
-    - vobject
     - lxml
-    - requests
+    - niquests
     - icalendar
     - recurring-ical-events >=2.0.0
     - pytz
