@@ -21,9 +21,8 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - vobject
     - lxml
-    - requests
+    - niquests
     - icalendar
     - recurring-ical-events >=2.0.0
     - pytz
