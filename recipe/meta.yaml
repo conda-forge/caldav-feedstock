@@ -29,7 +29,8 @@ requirements:
     - pytz
     - tzlocal
     - typing-extensions
-    - icalendar-searcher
+    - icalendar-searcher >=1.0.3
+    - dnspython
 
 test:
   imports:
