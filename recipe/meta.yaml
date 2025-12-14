@@ -29,6 +29,7 @@ requirements:
     - pytz
     - tzlocal
     - typing-extensions
+    - icalendar-searcher
 
 test:
   imports:
