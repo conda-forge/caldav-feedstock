@@ -1,5 +1,5 @@
 {% set name = "caldav" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caldav-{{ version }}.tar.gz
-  sha256: d4df2c73843162af2fe7d324149830de8903690bfa094244029481d9bba320d0
+  sha256: b474900130226f22dbe3e3abed34559faaeed8a29c455af920c2afb0e355e3d3
 
 build:
   noarch: python
