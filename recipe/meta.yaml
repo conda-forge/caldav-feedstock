@@ -1,5 +1,5 @@
 {% set name = "caldav" %}
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/caldav-{{ version }}.tar.gz
-  sha256: f3fd9013f0ba6a593fa4475e63fc4053674c632fa7267fb46ae4ae0581c04eb5
+  sha256: 945948cd3eca7eb5866e674e8c51c8ce30db66446762ed72d5755cb37fd87bf1
 
 build:
   noarch: python
