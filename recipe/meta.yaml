@@ -18,14 +18,14 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling
+    - hatchling >=1.27.0
     - hatch-vcs
   run:
     - python >={{ python_min }}
     - lxml
     - niquests
-    - icalendar >=6.0.0
-    - icalendar-searcher >=1.0.5,<2
+    - icalendar >6.0.0
+    - icalendar-searcher >=1.1.0,<2
     - recurring-ical-events >=2.0.0
     - dnspython
     - python-dateutil
